@@ -105,15 +105,15 @@ namespace Calculadora
                     TBXSCREEN.Text = sum.ToString();
                     break;
                 case "-":
-                    res = Operacion.Sumar((First), (Second));
+                    res = Operacion.Restar((First), (Second));
                     TBXSCREEN.Text = res.ToString();
                     break;
                 case "*":
-                    mul = Operacion.Sumar((First), (Second));
+                    mul = Operacion.Multiplicacion((First), (Second));
                     TBXSCREEN.Text = mul.ToString();
                     break;
                 case "/":
-                    div = Operacion.Sumar((First), (Second));
+                    div = Operacion.Dividir((First), (Second));
                     TBXSCREEN.Text = div.ToString();
                     break;
             }
@@ -130,6 +130,11 @@ namespace Calculadora
                 TBXSCREEN.Text = "";
             else
                 TBXSCREEN.Text = TBXSCREEN.Text.Substring(0, TBXSCREEN.Text.Length - 1);
+        }
+
+        private void puntodecimal_Click(object sender, EventArgs e)
+        {
+            TBXSCREEN.Text += ".";
         }
 
         private void Form1_Load(object sender, EventArgs e)

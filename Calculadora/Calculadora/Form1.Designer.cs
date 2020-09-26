@@ -253,6 +253,7 @@
             this.puntodecimal.TabIndex = 11;
             this.puntodecimal.Text = ".";
             this.puntodecimal.UseVisualStyleBackColor = true;
+            this.puntodecimal.Click += new System.EventHandler(this.puntodecimal_Click);
             // 
             // division
             // 
@@ -315,6 +316,7 @@
             // 
             // TBXSCREEN
             // 
+            this.TBXSCREEN.BackColor = System.Drawing.Color.White;
             this.TBXSCREEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TBXSCREEN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TBXSCREEN.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,14 +326,13 @@
             this.TBXSCREEN.ReadOnly = true;
             this.TBXSCREEN.Size = new System.Drawing.Size(198, 39);
             this.TBXSCREEN.TabIndex = 21;
-            this.TBXSCREEN.Text = "0";
             this.TBXSCREEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(216, 317);
             this.Controls.Add(this.TBXSCREEN);
             this.Controls.Add(this.division);
